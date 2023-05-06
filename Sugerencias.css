@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.superior{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    position: absolute;
+    
+}
+.superior #nav{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 20px;
+    gap: 50px;
+    text-align: center;
+    z-index: 10;
+    
+    
+}
+
+.superior a{
+    text-decoration: none;
+    font-family: 'Abel', sans-serif;
+    color: whitesmoke;
+    font-size: larger;
+}
+
+.superior a:hover{
+    background-color: rgb(58, 55, 59);
+    color: whitesmoke;
+}
+
+.superior #iconoBusqueda:hover{
+    background-color: rgb(58, 55, 59);
+}
+
+
+#buscador{
+    display: block;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    opacity: 0;
+    padding: 10px;
+    z-index: 9;
+    position: absolute;
+    width: 600px;
+    top: -40px;
+    transition: all 500ms;
+}
+
+#buscador #barra-busqueda{
+    display: block;
+    width: 600px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    margin: auto;
+    padding: 10px;
+    font-size: 16px;
+    outline: 0;
+}
+#buscador #resultado{
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    background-color: whitesmoke;
+    width: 600px;
+    list-style: none;
+    text-decoration: none;
+    margin: auto;
+    line-height: 30px;
+    padding: 12px;
+    border-radius: 5px;  
+}
+#buscador #resultado a{
+    color: black;
+}
+#buscador #resultado a:hover{
+    background-color: rgb(185, 185, 185);
+}
+
+#cobertura{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 6;
+    position: fixed;
+    display: none; 
+}
+.slider2 {
+    height:100vh;
+    width: 100%;
+    
+	overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+.slider2 ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+    
+	animation: slider2 15s infinite alternate linear;
+    animation-timing-function: ease;
+    z-index: 5;
+}
+.slider2 li {
+	width: 100%;
+	list-style: none;
+}
+.slider2 img {
+	width: 100%;
+    height: 100vh;
+    opacity: 0.9;
+}
+@keyframes slider2 {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.formulario{ 
+    display: block;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 5;
+    background-color: black;
+    margin-top: 150px;
+    opacity: 0.95;
+    text-align: center;
+    padding: 20px 80px;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+.formulario input{ 
+    width: 60%;
+    margin-bottom: 25px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+}
+
+#enviarForm{
+    background-color: rgb(13, 214, 197);
+}
+#enviarForm:hover{
+    background-color: rgba(13, 214, 197, 0.411);
+    opacity: 1;
+    font-size: 21px;
+}
+
+#resultados{
+    display: block;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+
+    opacity: 0;
+    padding: 15px;
+    z-index: 1;
+    position: absolute;
+    top: -10px;
+    transition: all 700ms;
+
+    background-color: black;
+    font-family: 'Abel', sans-serif;
+    color: whitesmoke;
+    line-height: 30px;
+}
+
+#resultados h4{
+    font-size: 30px;
+}
+
+
+footer{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 180px;
+    color: white;
+    position: relative;
+    font-family: 'Abel', sans-serif;
+}
+footer #login{
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    padding-top: 40px;
+    opacity: 0.8;
+    z-index: 10;
+}
+footer #login:hover{
+    opacity: 1;
+}
+footer #logo00{
+    padding-top: 80px;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ingreso - BV</title>
+        <link rel="shortcut icon" href="Imagenes/logo.png"/>
+        <link rel="stylesheet" type="text/css" href="Sugerencias.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="inicioSesion.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="cobertura"></div>
+        <div class="superior">
+            <div id="nav">
+                <div> <a href="index.html">home</a></div>
+                <div> <a href="Directorio.html">creaturas</a></div>
+                <div> <a href="Videojuegos.html">videojuegos</a></div>
+                <div> <a href="Nosotros.html">nosotros</a></div>
+                <div>
+                    <img id="iconoBusqueda" width="22px" src="Imagenes/icon-busqueda.png">
+                </div> 
+            </div>
+            <div id="buscador">
+                <input type="text" id="barra-busqueda" class="form-control my-2" placeholder="  Buscar creatura">
+                <ul id="resultado">
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div id="f1" class="formulario">
+            <h2>Iniciar Sesión</h2> <br>
+            <form action="InicioSesion.html" method="POST">
+                <input type="text" id="usuario" name="usuario" placeholder="  Usuario" ><br>
+                <input type="text" id="contraseña" name="contaseña" placeholder="  Contraseña"><br>
+                <input type="button" id="enviarForm" name="enviarForm" value="Enviar" onclick="validarDatos()">
+            </form>
+        </div>
+        <div id="resultados">
+            <H4>Sugerencias</H4> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iste ut impedit eum. Amet rem ut sunt tempora, magni quaerat accusantium praesentium voluptas maiores officia cumque iure voluptates ullam quos.</p>
+        </div>
+        <div class="slider2">
+            <ul>
+                <li>
+                    <img src="Imagenes/paisaje1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="Imagenes/paisaje2.jpg" alt="">
+                </li>
+                <li>
+                    <img src="Imagenes/paisaje3.jpg" alt="">
+                </li>
+                <li>
+                    <img src="Imagenes/paisaje4.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+         <footer>
+                <div id="logo00"><img src="Imagenes/LOGO_TITULO.png" width="350px"></div>
+            </footer>
+        <script src="Buscador.js"></script>  
+    </body>
+</html>
